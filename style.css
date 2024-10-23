@@ -1,0 +1,36 @@
+* {
+    font-family: "Poppins", serif;
+    color: #262626;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #59280a;
+    border-radius: 10px;
+}
+
+.debug {
+    border: 1px solid #cf6045;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#menu-filter.active {
+    background: #59280a;
+    color: #ffffff;
+}
+
+#menu-filter:hover {
+    background: #59280a;
+    color: #ffffff;
+}

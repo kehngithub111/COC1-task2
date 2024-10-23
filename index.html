@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Delight</title>
+
+    <link rel="shortcut icon" href="./images/coffee cup-rafiki.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./app.js"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- HEADER SECTION -->
+    <header class="fixed top-0 left-0 w-full h-[4.5rem] z-[999] bg-[#ffffff] px-2">
+        <div class="h-full max-w-[1400px] w-full flex items-center justify-between mx-auto">
+            <div class="flex items-center gap-2">
+                <img class="size-[60px] object-cover" src="./images/coffee cup-rafiki.svg" alt="cafe-delight logo">
+                <h1 class="font-extrabold text-3xl max-[768px]:text-2xl max-sm:text-xl"><span
+                        class="text-[#59280a]">Cafe</span> <span class="italic">Delight</span></h1>
+            </div>
+
+            <div class="flex items-center h-full gap-6 max-[768px]:hidden">
+                <a href="">Home</a>
+                <a href="">Menu</a>
+                <a href="">Location</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER SECTION -->
+    <div class="realtive h-[100dvh] w-full">
+        <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.7)]"></div>
+        <img class="object-cover h-full w-full" src="./images/cd-homebanner.jpg" alt="">
+
+        <div
+            class="absolute top-1/2 px-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex items-center max-w-[1300px] mx-auto justify-between">
+            <div>
+                <h1 class="text-[#ffffff] text-6xl font-extrabold text-shadow">Warmth Meets Flavor.</h1>
+                <p class="text-[#ffffff]">A place where you can sip and relax. What are you waiting for?</p>
+                <div class="mt-4 flex gap-2">
+                    <a href="#"
+                        class="text-[#ffffff] bg-[#59280a] w-[130px] py-2 flex items-center justify-center rounded-md">Book
+                        Now</a>
+                    <a href="#"
+                        class="text-[#ffffff] bg-[#59280a] w-[130px] py-2 flex items-center justify-center rounded-md">Order
+                        Now</a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- MENU SECTION -->
+    <div class="max-w-[1000px] w-full mx-auto my-[4rem]">
+        <div class="w-full flex items-center justify-between">
+            <h1 class="text-3xl font-bold">Menus</h1>
+            <a href="">View More</a>
+        </div>
+
+        <div class="flex gap-1 mt-3">
+            <button class="border h-[40px] w-[130px] rounded text-sm active" id="menu-filter">All</button>
+            <button class="border h-[40px] w-[130px] rounded text-sm" id="menu-filter">Coffee</button>
+            <button class="border h-[40px] w-[130px] rounded text-sm" id="menu-filter">Pastries</button>
+            <button class="border h-[40px] w-[130px] rounded text-sm" id="menu-filter">Sandwiches</button>
+        </div>
+
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-2 mt-4 max-[420px]:grid-cols-1">
+            <div class="bg-[#ffffff] shadow-md rounded-md p-2">
+                <img class="object-cover size-[200px] mx-auto" src="./images/products/capuccino.jpg" alt="">
+                <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos nam nisi soluta veniam sit consequatur omnis beatae architecto explicabo.</p>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <div class="flex items-center justify-end">
+                    <div class=" hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer">
+                        <img class="size-[20px]" src="./images/icons/bag.svg" alt="">
+                        <h1>P 50.00</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#ffffff] shadow-md rounded-md p-2">
+                <img class="object-cover size-[200px] mx-auto" src="./images/products/capuccino.jpg" alt="">
+                <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos nam nisi soluta veniam sit consequatur omnis beatae architecto explicabo.</p>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <div class="flex items-center justify-end">
+                    <div class=" hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer">
+                        <img class="size-[20px]" src="./images/icons/bag.svg" alt="">
+                        <h1>P 50.00</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#ffffff] shadow-md rounded-md p-2">
+                <img class="object-cover size-[200px] mx-auto" src="./images/products/capuccino.jpg" alt="">
+                <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos nam nisi soluta veniam sit consequatur omnis beatae architecto explicabo.</p>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <div class="flex items-center justify-end">
+                    <div class=" hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer">
+                        <img class="size-[20px]" src="./images/icons/bag.svg" alt="">
+                        <h1>P 50.00</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#ffffff] shadow-md rounded-md p-2">
+                <img class="object-cover size-[200px] mx-auto" src="./images/products/capuccino.jpg" alt="">
+                <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos nam nisi soluta veniam sit consequatur omnis beatae architecto explicabo.</p>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <div class="flex items-center justify-end">
+                    <div class=" hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer">
+                        <img class="size-[20px]" src="./images/icons/bag.svg" alt="">
+                        <h1>P 50.00</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#ffffff] shadow-md rounded-md p-2">
+                <img class="object-cover size-[200px] mx-auto" src="./images/products/capuccino.jpg" alt="">
+                <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos nam nisi soluta veniam sit consequatur omnis beatae architecto explicabo.</p>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <div class="flex items-center justify-end">
+                    <div class=" hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer">
+                        <img class="size-[20px]" src="./images/icons/bag.svg" alt="">
+                        <h1>P 50.00</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
