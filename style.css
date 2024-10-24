@@ -34,3 +34,7 @@
     background: #59280a;
     color: #ffffff;
 }
+
+#menuFilterContainer::-webkit-scrollbar {
+    height: 2px;
+}

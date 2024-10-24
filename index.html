@@ -59,27 +59,34 @@
     </div>
 
     <!-- MENU SECTION -->
-    <div class="max-w-[1000px] w-full mx-auto my-[4rem]">
+    <div class="max-w-[1300px] w-full mx-auto my-[4rem] px-1">
         <div class="w-full flex items-center justify-between">
             <h1 class="text-3xl font-bold">Menus</h1>
-            <a href="">View More</a>
+            <a href="" class="text-sm">View More</a>
         </div>
 
-        <div class="flex gap-1 mt-3">
-            <button class="border h-[40px] w-[130px] rounded text-sm active" id="menu-filter">All</button>
-            <button class="border h-[40px] w-[130px] rounded text-sm" id="menu-filter">Coffee</button>
-            <button class="border h-[40px] w-[130px] rounded text-sm" id="menu-filter">Pastries</button>
-            <button class="border h-[40px] w-[130px] rounded text-sm" id="menu-filter">Sandwiches</button>
+        <div id="menuFilterContainer" class="overflow-x-auto py-1">
+            <div class="flex gap-1 mt-3 min-w-[530px]">
+                <button class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px] active"
+                    id="menu-filter">All</button>
+                <button class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px]"
+                    id="menu-filter">Coffee</button>
+                <button class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px]"
+                    id="menu-filter">Pastries</button>
+                <button class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px]"
+                    id="menu-filter">Sandwiches</button>
+            </div>
         </div>
 
-        <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-2 mt-4 max-[420px]:grid-cols-1">
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-2 mt-4 max-sm:grid-cols-1">
             <div class="bg-[#ffffff] shadow-md rounded-md p-2">
-                <img class="object-cover size-[200px] mx-auto" src="./images/products/capuccino.jpg" alt="">
+                <img class="object-cover size-[200px] mx-auto max-sm:size-[150px]" src="./images/products/capuccino.jpg"
+                    alt="">
                 <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
 
                 <div class="border-b mt-3 mb-2"></div>
 
-                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos nam nisi soluta veniam sit consequatur omnis beatae architecto explicabo.</p>
+                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div class="border-b mt-3 mb-2"></div>
 
@@ -91,12 +98,13 @@
                 </div>
             </div>
             <div class="bg-[#ffffff] shadow-md rounded-md p-2">
-                <img class="object-cover size-[200px] mx-auto" src="./images/products/capuccino.jpg" alt="">
+                <img class="object-cover size-[200px] mx-auto max-sm:size-[150px]" src="./images/products/capuccino.jpg"
+                    alt="">
                 <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
 
                 <div class="border-b mt-3 mb-2"></div>
 
-                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos nam nisi soluta veniam sit consequatur omnis beatae architecto explicabo.</p>
+                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div class="border-b mt-3 mb-2"></div>
 
@@ -108,12 +116,13 @@
                 </div>
             </div>
             <div class="bg-[#ffffff] shadow-md rounded-md p-2">
-                <img class="object-cover size-[200px] mx-auto" src="./images/products/capuccino.jpg" alt="">
+                <img class="object-cover size-[200px] mx-auto max-sm:size-[150px]" src="./images/products/capuccino.jpg"
+                    alt="">
                 <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
 
                 <div class="border-b mt-3 mb-2"></div>
 
-                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos nam nisi soluta veniam sit consequatur omnis beatae architecto explicabo.</p>
+                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div class="border-b mt-3 mb-2"></div>
 
@@ -125,12 +134,13 @@
                 </div>
             </div>
             <div class="bg-[#ffffff] shadow-md rounded-md p-2">
-                <img class="object-cover size-[200px] mx-auto" src="./images/products/capuccino.jpg" alt="">
+                <img class="object-cover size-[200px] mx-auto max-sm:size-[150px]" src="./images/products/capuccino.jpg"
+                    alt="">
                 <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
 
                 <div class="border-b mt-3 mb-2"></div>
 
-                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos nam nisi soluta veniam sit consequatur omnis beatae architecto explicabo.</p>
+                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
                 <div class="border-b mt-3 mb-2"></div>
 
@@ -141,25 +151,98 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-[#ffffff] shadow-md rounded-md p-2">
-                <img class="object-cover size-[200px] mx-auto" src="./images/products/capuccino.jpg" alt="">
-                <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
-
-                <div class="border-b mt-3 mb-2"></div>
-
-                <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eos nam nisi soluta veniam sit consequatur omnis beatae architecto explicabo.</p>
-
-                <div class="border-b mt-3 mb-2"></div>
-
-                <div class="flex items-center justify-end">
-                    <div class=" hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer">
-                        <img class="size-[20px]" src="./images/icons/bag.svg" alt="">
-                        <h1>P 50.00</h1>
-                    </div>
-                </div>
-            </div>
-
         </div>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="my-[4rem]">
+        <div class="max-w-[1300px] w-full mx-auto flex gap-2 px-1 flex-wrap">
+            <div class="bg-[#ffffff] flex flex-col p-4 rounded-md shadow-md h-full max-[649px]:w-full">
+                <div class="flex items-center gap-2">
+                    <img class="size-[80px]" src="./images/coffee cup-rafiki.svg" alt="">
+                    <div class=" flex flex-col">
+                        <span class="text-2xl font-bold">Cafe Delight</span>
+                        <span class="font-base italic text-base">Opertion Hours</span>
+                    </div>
+                </div>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <h1><span class="font-bold">Address:</span> <br> Brgy. Atupan, Nasipit, Agusan del Norte</h1>
+
+                <div class="border-b mt-3 mb-2"></div>
+                <span>Monday - Friday: 7:00 AM - 8:00 PM</span>
+                <span>Saturday: 8:00 AM - 9:00 PM</span>
+                <span>Sunday: 8:00 AM - 6:00 PM</span>
+                <div class="border-b mt-3 mb-2"></div>
+                <span class="font-bold">Holiday Hours:</span>
+                <div class="border-b mt-3 mb-2"></div>
+                <span>Christmas Eve: 7:00 AM - 4:00 PM</span>
+                <span>Christmas Day: Closed</span>
+                <span>New Year's Eve: 7:00 AM - 6:00 PM</span>
+                <span>New Year's Day: 9:00 AM - 6:00 PM</span>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <span class="text-2xl italic text-center font-bold">Lezzz Gooooo!!!</span>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492.60407712752203!2d125.34015225138879!3d8.98754528505014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301c96aca01cf69%3A0xdd07e2c1ed023e6e!2sCafe%20Aria%20Nasipit!5e0!3m2!1sen!2sph!4v1729733549165!5m2!1sen!2sph"
+                class="flex-1 shadow-md rounded-md max-[649px]:flex-none max-[649px]:w-full max-[649px]:h-[400px]"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="my-[4rem]">
+        <div class="max-w-[1300px] w-full mx-auto px-1 flex gap-2">
+            <div class="bg-[#ffffff] flex-1 p-4 rounded-md shadow-md">
+                <h1>Contact Page</h1>
+
+                <div class="border-b mt-3 mb-2"></div>
+
+                <div class="flex flex-col gap-3">
+                    <div class="flex gap-2">
+                        <img class="size-[25px]" src="./images/icons/location.svg" alt="">
+                        <span>Address: Sample </span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img class="size-[25px]" src="./images/icons/phone.svg" alt="">
+                        <span>Telephone Number: Sample </span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img class="size-[25px]" src="./images/icons/envelope.svg" alt="">
+                        <span>Email: Sample </span>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="bg-[#ffffff] p-4 shadow-md w-1/3 flex flex-col gap-4 rounded-md">
+                <h1>Send us a Message</h1>
+
+                <div class="border-b"></div>
+
+                <div class="flex flex-col">
+                    <label for="username" class="capitalize">username</label>
+                    <input type="text" name="username" id="username" class="outline-none border p-2 rounded-md text-sm">
+                </div>
+                <div class="flex flex-col">
+                    <label for="password" class="capitalize">email</label>
+                    <input type="text" name="email" id="email" class="outline-none border p-2 rounded-md text-sm">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="message" class="capitalize">message</label>
+                    <textarea class="outline-none border p-2 rounded-md text-sm" name="" id=""></textarea>
+                </div>
+
+                <button type="submit" class="bg-[#59280a] h-[39px] text-[#ffffff] rounded-md">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        Footer
     </div>
 </body>
 
