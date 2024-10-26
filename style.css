@@ -18,7 +18,7 @@
 }
 
 .debug {
-    border: 1px solid #cf6045;
+    border: 1px solid red;
 }
 
 .text-shadow {
@@ -39,3 +39,10 @@
     height: 2px;
 }
 
+#navContainer {
+    transition: all 700ms ease-in-out;
+}
+
+#navContainer.navActive {
+    right: 0;
+}

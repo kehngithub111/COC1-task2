@@ -1,397 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Delight</title>
 
-    <link
-      rel="shortcut icon"
-      href="./images/coffee cup-rafiki.svg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Delight</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./app.js"></script>
-  </head>
+  <link rel="shortcut icon" href="./images/coffee cup-rafiki.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
 
-  <body class="bg-gray-100">
-    <!-- HEADER SECTION -->
-    <header
-      class="fixed top-0 left-0 w-full h-[4.5rem] z-[999] bg-[#ffffff] px-2"
-    >
-      <div
-        class="h-full max-w-[1400px] w-full flex items-center justify-between mx-auto"
-      >
-        <div class="flex items-center gap-2">
-          <img
-            class="size-[60px] object-cover"
-            src="./images/coffee cup-rafiki.svg"
-            alt="cafe-delight logo"
-          />
-          <h1
-            class="font-extrabold text-3xl max-[768px]:text-2xl max-sm:text-xl"
-          >
-            <span class="text-[#59280a]">Cafe</span>
-            <span class="italic">Delight</span>
-          </h1>
-        </div>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./app.js"></script>
+</head>
 
-        <div class="flex items-center h-full gap-6 max-[768px]:hidden">
-          <a href="">Home</a>
-          <a href="">Menu</a>
-          <a href="">Location</a>
-          <a href="">Contact</a>
-        </div>
+<body class="bg-gray-100">
+  <!-- HEADER SECTION -->
+  <header class="fixed top-0 left-0 w-full h-[4.5rem] z-[999] bg-[#ffffff] px-2">
+    <div class="h-full max-w-[1400px] w-full flex items-center justify-between mx-auto">
+      <div class="flex items-center gap-2">
+        <img class="size-[60px] object-cover" src="./images/coffee cup-rafiki.svg" alt="cafe-delight logo" />
+        <h1 class="font-extrabold text-3xl max-[768px]:text-2xl max-sm:text-xl">
+          <span class="text-[#59280a]">Cafe</span>
+          <span class="italic">Delight</span>
+        </h1>
       </div>
-    </header>
 
-    <!-- BANNER SECTION -->
-    <div class="realtive h-[100dvh] w-full">
-      <div
-        class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.7)]"
-      ></div>
-      <img
-        class="object-cover h-full w-full"
-        src="./images/cd-homebanner.jpg"
-        alt=""
-      />
-
-      <div
-        class="absolute top-1/2 px-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex items-center max-w-[1300px] mx-auto justify-between"
-      >
-        <div>
-          <h1 class="text-[#ffffff] text-6xl font-extrabold text-shadow">
-            Warmth Meets Flavor.
-          </h1>
-          <p class="text-[#ffffff]">
-            A place where you can sip and relax. What are you waiting for?
-          </p>
-          <div class="mt-4 flex gap-2">
-            <a
-              href="#"
-              class="text-[#ffffff] bg-[#59280a] w-[130px] py-2 flex items-center justify-center rounded-md"
-              >Book Now</a
-            >
-            <a
-              href="#"
-              class="text-[#ffffff] bg-[#59280a] w-[130px] py-2 flex items-center justify-center rounded-md"
-              >Order Now</a
-            >
-          </div>
-        </div>
-        <div></div>
+      <div id="navContainer"
+        class="flex items-center h-full gap-6 max-[768px]:fixed max-[768px]:top-[4.5rem] max-[768px]:-right-full max-[768px]:bg-[#0F0E12] max-[768px]:max-[768px]:flex-col max-[768px]:w-[300px] max-[768px]:pt-[2rem] max-sm:w-full">
+        <a href="" class="text-sm max-[768px]:text-[#ffffff]">Home</a>
+        <a href="" class="text-sm max-[768px]:text-[#ffffff]">Menu</a>
+        <a href="" class="text-sm max-[768px]:text-[#ffffff]">Location</a>
+        <a href="" class="text-sm max-[768px]:text-[#ffffff]">Contact</a>
       </div>
+
+      <img id="navButton" class="size-[30px] hidden max-[768px]:block" src="./images/icons/menu.svg" alt="">
     </div>
+  </header>
 
-    <!-- MENU SECTION -->
-    <div class="max-w-[1300px] w-full mx-auto my-[4rem] px-1">
-      <div class="w-full flex items-center justify-between">
-        <h1 class="text-3xl font-bold">Menus</h1>
-        <a href="" class="text-sm">View More</a>
-      </div>
-
-      <div id="menuFilterContainer" class="overflow-x-auto py-1">
-        <div class="flex gap-1 mt-3 min-w-[530px]">
-          <button
-            class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px] active"
-            id="menu-filter"
-          >
-            All
-          </button>
-          <button
-            class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px]"
-            id="menu-filter"
-          >
-            Coffee
-          </button>
-          <button
-            class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px]"
-            id="menu-filter"
-          >
-            Pastries
-          </button>
-          <button
-            class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px]"
-            id="menu-filter"
-          >
-            Sandwiches
-          </button>
-        </div>
-      </div>
-
-      <div
-        class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-2 mt-4 max-sm:grid-cols-1"
-      >
-        <div class="bg-[#ffffff] shadow-md rounded-md p-2">
-          <img
-            class="object-cover size-[200px] mx-auto max-sm:size-[150px]"
-            src="./images/products/capuccino.jpg"
-            alt=""
-          />
-          <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <p class="text-sm text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <div class="flex items-center justify-end">
-            <div
-              class="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer"
-            >
-              <img class="size-[20px]" src="./images/icons/bag.svg" alt="" />
-              <h1>P 50.00</h1>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[#ffffff] shadow-md rounded-md p-2">
-          <img
-            class="object-cover size-[200px] mx-auto max-sm:size-[150px]"
-            src="./images/products/capuccino.jpg"
-            alt=""
-          />
-          <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <p class="text-sm text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <div class="flex items-center justify-end">
-            <div
-              class="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer"
-            >
-              <img class="size-[20px]" src="./images/icons/bag.svg" alt="" />
-              <h1>P 50.00</h1>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[#ffffff] shadow-md rounded-md p-2">
-          <img
-            class="object-cover size-[200px] mx-auto max-sm:size-[150px]"
-            src="./images/products/capuccino.jpg"
-            alt=""
-          />
-          <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <p class="text-sm text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <div class="flex items-center justify-end">
-            <div
-              class="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer"
-            >
-              <img class="size-[20px]" src="./images/icons/bag.svg" alt="" />
-              <h1>P 50.00</h1>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[#ffffff] shadow-md rounded-md p-2">
-          <img
-            class="object-cover size-[200px] mx-auto max-sm:size-[150px]"
-            src="./images/products/capuccino.jpg"
-            alt=""
-          />
-          <h1 class="text-xl text-center italic mb-2">Capuccino</h1>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <p class="text-sm text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <div class="flex items-center justify-end">
-            <div
-              class="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer"
-            >
-              <img class="size-[20px]" src="./images/icons/bag.svg" alt="" />
-              <h1>P 50.00</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- LOCATION -->
-    <div class="my-[4rem]">
-      <div class="max-w-[1300px] w-full mx-auto flex gap-2 px-1 flex-wrap">
-        <div
-          class="bg-[#ffffff] flex flex-col p-4 rounded-md shadow-md h-full max-[649px]:w-full"
-        >
-          <div class="flex items-center gap-2">
-            <img
-              class="size-[80px]"
-              src="./images/coffee cup-rafiki.svg"
-              alt=""
-            />
-            <div class="flex flex-col">
-              <span class="text-2xl font-bold">Cafe Delight</span>
-              <span class="font-base italic text-base">Opertion Hours</span>
-            </div>
-          </div>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <h1>
-            <span class="font-bold">Address:</span> <br />
-            Brgy. Atupan, Nasipit, Agusan del Norte
-          </h1>
-
-          <div class="border-b mt-3 mb-2"></div>
-          <span>Monday - Friday: 7:00 AM - 8:00 PM</span>
-          <span>Saturday: 8:00 AM - 9:00 PM</span>
-          <span>Sunday: 8:00 AM - 6:00 PM</span>
-          <div class="border-b mt-3 mb-2"></div>
-          <span class="font-bold">Holiday Hours:</span>
-          <div class="border-b mt-3 mb-2"></div>
-          <span>Christmas Eve: 7:00 AM - 4:00 PM</span>
-          <span>Christmas Day: Closed</span>
-          <span>New Year's Eve: 7:00 AM - 6:00 PM</span>
-          <span>New Year's Day: 9:00 AM - 6:00 PM</span>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <span class="text-2xl italic text-center font-bold"
-            >Lezzz Gooooo!!!</span
-          >
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492.60407712752203!2d125.34015225138879!3d8.98754528505014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301c96aca01cf69%3A0xdd07e2c1ed023e6e!2sCafe%20Aria%20Nasipit!5e0!3m2!1sen!2sph!4v1729733549165!5m2!1sen!2sph"
-          class="flex-1 shadow-md rounded-md max-[649px]:flex-none max-[649px]:w-full max-[649px]:h-[400px]"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </div>
-
-    <!-- CONTACT -->
-    <div class="my-[4rem]">
-      <div class="max-w-[1300px] w-full mx-auto px-1 flex gap-2 max-[855px]:flex-col">
-        <div class="bg-[#ffffff] flex-1 p-4 rounded-md shadow-md relative">
-          <h1 class="text-2xl font-bold">Contact Us</h1>
-
-          <div class="border-b mt-3 mb-2"></div>
-
-          <img
-            class="absolute bottom-2 right-2 size-[200px] object-cover max-[697px]:hidden"
-            src="./images/coffee cup-rafiki.svg"
-            alt=""
-          />
-
-          <div class="flex flex-col gap-3">
-            <div class="flex gap-4 items-center">
-              <div
-                class="bg-[#59280a] size-[40px] flex items-center justify-center rounded-full shadow-md"
-              >
-                <img
-                  class="size-[18px]"
-                  src="./images/icons/location.svg"
-                  alt=""
-                />
-              </div>
-              <span>Address: <span class="italic font-bold ml-2">Brgy. Atupan, Nasipit, Agusan del Norte</span> </span>
-            </div>
-            <div class="flex gap-4 items-center">
-              <div
-                class="bg-[#59280a] size-[40px] flex items-center justify-center rounded-full shadow-md"
-              >
-                <img
-                  class="size-[18px]"
-                  src="./images/icons/phone.svg"
-                  alt=""
-                />
-              </div>
-              <span>Telephone Number: <span class="italic font-bold ml-2">8123-4567</span> </span>
-            </div>
-            <div class="flex gap-4 items-center">
-              <div
-                class="bg-[#59280a] size-[40px] flex items-center justify-center rounded-full shadow-md"
-              >
-                <img
-                  class="size-[18px]"
-                  src="./images/icons/envelope.svg"
-                  alt=""
-                />
-              </div>
-              <span class="">Email: <span class="italic font-bold ml-2">cafedelight@gmail.com</span>  </span>
-            </div>
-          </div>
-        </div>
-
-        <form
-          action=""
-          class="bg-[#ffffff] p-4 shadow-md w-1/3 flex flex-col gap-4 rounded-md max-[855px]:w-full"
-        >
-          <h1 class="text-2xl text-center font-bold">Send us a Message</h1>
-
-          <div class="border-b"></div>
-
-          <div class="flex flex-col">
-            <label for="name" class="capitalize">name</label>
-            <input
-              required
-              type="text"
-              name="name"
-              id="name"
-              class="outline-none border p-2 rounded-md text-sm"
-            />
-          </div>
-          <div class="flex flex-col">
-            <label for="password" class="capitalize">email</label>
-            <input
-              required
-              type="email"
-              name="email"
-              id="email"
-              class="outline-none border p-2 rounded-md text-sm"
-            />
-          </div>
-
-          <div class="flex flex-col">
-            <label for="message" class="capitalize">message</label>
-            <textarea
-              rows="6"
-              required
-              class="outline-none border p-2 rounded-md text-sm resize-none"
-              name=""
-              id=""
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            class="bg-[#59280a] h-[39px] text-[#ffffff] rounded-md"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
+  <!-- BANNER SECTION -->
+  <div class="realtive h-[100dvh] w-full">
+    <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.7)]"></div>
+    <img class="object-cover h-full w-full" src="./images/cd-homebanner.jpg" alt="" />
 
     <div
-      class="bg-[#262626] flex items-center justify-center py-5 text-[#ffffff] text-sm"
-      id="footer"
-    ></div>
-  </body>
+      class="absolute top-1/2 px-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex items-center max-w-[1300px] mx-auto justify-between">
+      <div>
+        <h1 class="text-[#ffffff] text-6xl font-extrabold text-shadow">
+          Warmth Meets Flavor.
+        </h1>
+        <p class="text-[#ffffff]">
+          A place where you can sip and relax. What are you waiting for?
+        </p>
+        <div class="mt-4 flex gap-2">
+          <a href="#"
+            class="text-[#ffffff] bg-[#59280a] w-[130px] py-2 flex items-center justify-center rounded-md">Book Now</a>
+          <a href="#"
+            class="text-[#ffffff] bg-[#59280a] w-[130px] py-2 flex items-center justify-center rounded-md">Order Now</a>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- MENU SECTION -->
+  <div class="max-w-[1300px] w-full mx-auto my-[4rem] px-1">
+    <div class="w-full flex items-center justify-between">
+      <h1 class="text-3xl font-bold">Menus</h1>
+      <a href="" class="text-sm">View More</a>
+    </div>
+
+    <div id="menuFilterContainer" class="overflow-x-auto py-1">
+      <div class="flex gap-1 mt-3 min-w-[530px]">
+        <button class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px] active"
+          id="menu-filter">
+          All
+        </button>
+        <button class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px]" id="menu-filter">
+          Coffee
+        </button>
+        <button class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px]" id="menu-filter">
+          Pastries
+        </button>
+        <button class="border h-[40px] w-[130px] rounded text-sm max-sm:h-[30px] max-sm:w-[100px]" id="menu-filter">
+          Sandwiches
+        </button>
+      </div>
+    </div>
+
+    <div class="grid place-items-center grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-2 mt-4 max-sm:grid-cols-2">
+      <div class="bg-[#ffffff] shadow-md rounded-md p-2 max-w-[300px] w-full">
+        <div class="h-[200px]">
+          <img class="object-cover w-full h-full" src="./images/products/87a73604e6eac160f5c1eda75a1edd62.jpg" alt="" />
+        </div>
+        <h1 class="text-lg text-center italic my-2">Matcha Latte</h1>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <p class="text-sm text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <div class="flex items-center justify-end">
+          <div class="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer">
+            <img class="size-[20px]" src="./images/icons/bag.svg" alt="" />
+            <h1>P 50.00</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#ffffff] shadow-md rounded-md p-2 w-full max-w-[300px]">
+        <div class="h-[200px]">
+          <img class="object-cover  w-full h-full" src="./images/products/90dfadcee2ce54cf17185014311bb0dd.jpg"
+            alt="" />
+        </div>
+        <h1 class="text-lg text-center italic my-2">Chocolate Profiteroles</h1>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <p class="text-sm text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <div class="flex items-center justify-end">
+          <div class="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer">
+            <img class="size-[20px]" src="./images/icons/bag.svg" alt="" />
+            <h1>P 50.00</h1>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#ffffff] shadow-md rounded-md p-2 w-full max-w-[300px]">
+        <div class="h-[200px]">
+          <img class="object-cover  w-full h-full" src="./images/products/ceacc3bfe9de0b36645216ae112dcca2.jpg"
+            alt="" />
+        </div>
+        <h1 class="text-lg text-center italic my-2">Katsu Sando</h1>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <p class="text-sm text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <div class="flex items-center justify-end">
+          <div class="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer">
+            <img class="size-[20px]" src="./images/icons/bag.svg" alt="" />
+            <h1>P 50.00</h1>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#ffffff] shadow-md rounded-md p-2 w-full max-w-[300px]">
+        <div class="h-[200px]">
+          <img class="object-cover  w-full h-full" src="./images/products/90dfadcee2ce54cf17185014311bb0dd.jpg"
+            alt="" />
+        </div>
+        <h1 class="text-lg text-center italic my-2">Chocolate Profiteroles</h1>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <p class="text-sm text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <div class="flex items-center justify-end">
+          <div class="hover:bg-gray-100 flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer">
+            <img class="size-[20px]" src="./images/icons/bag.svg" alt="" />
+            <h1>P 50.00</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOCATION -->
+  <div class="my-[4rem]">
+    <div class="max-w-[1300px] w-full mx-auto flex gap-2 px-1 flex-wrap">
+      <div class="bg-[#ffffff] flex flex-col p-4 rounded-md shadow-md h-full max-[649px]:w-full">
+        <div class="flex items-center gap-2">
+          <img class="size-[80px]" src="./images/coffee cup-rafiki.svg" alt="" />
+          <div class="flex flex-col">
+            <span class="text-2xl font-bold">Cafe Delight</span>
+            <span class="font-base italic text-base">Opertion Hours</span>
+          </div>
+        </div>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <h1>
+          <span class="font-bold">Address:</span> <br />
+          Brgy. Atupan, Nasipit, Agusan del Norte
+        </h1>
+
+        <div class="border-b mt-3 mb-2"></div>
+        <span>Monday - Friday: 7:00 AM - 8:00 PM</span>
+        <span>Saturday: 8:00 AM - 9:00 PM</span>
+        <span>Sunday: 8:00 AM - 6:00 PM</span>
+        <div class="border-b mt-3 mb-2"></div>
+        <span class="font-bold">Holiday Hours:</span>
+        <div class="border-b mt-3 mb-2"></div>
+        <span>Christmas Eve: 7:00 AM - 4:00 PM</span>
+        <span>Christmas Day: Closed</span>
+        <span>New Year's Eve: 7:00 AM - 6:00 PM</span>
+        <span>New Year's Day: 9:00 AM - 6:00 PM</span>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <span class="text-2xl italic text-center font-bold">Lezzz Gooooo!!!</span>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492.60407712752203!2d125.34015225138879!3d8.98754528505014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301c96aca01cf69%3A0xdd07e2c1ed023e6e!2sCafe%20Aria%20Nasipit!5e0!3m2!1sen!2sph!4v1729733549165!5m2!1sen!2sph"
+        class="flex-1 shadow-md rounded-md max-[649px]:flex-none max-[649px]:w-full max-[649px]:h-[400px]"
+        style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="my-[4rem]">
+    <div class="max-w-[1300px] w-full mx-auto px-1 flex gap-2 max-[855px]:flex-col">
+      <div class="bg-[#ffffff] flex-1 p-4 rounded-md shadow-md relative">
+        <h1 class="text-2xl font-bold">Contact Us</h1>
+
+        <div class="border-b mt-3 mb-2"></div>
+
+        <img class="absolute bottom-2 right-2 size-[200px] object-cover max-[697px]:hidden"
+          src="./images/coffee cup-rafiki.svg" alt="" />
+
+        <div class="flex flex-col gap-3">
+          <div class="flex gap-4 items-center max-sm:flex-col max-sm:items-start max-sm:mb-2">
+            <div class="bg-[#59280a] size-[40px] flex items-center justify-center rounded-full shadow-md">
+              <img class="size-[18px]" src="./images/icons/location.svg" alt="" />
+            </div>
+            <span>Address: <span class="italic font-bold ml-2">Brgy. Atupan, Nasipit, Agusan del Norte</span> </span>
+          </div>
+          <div class="flex gap-4 items-center max-sm:flex-col max-sm:items-start max-sm:mb-2">
+            <div class="bg-[#59280a] size-[40px] flex items-center justify-center rounded-full shadow-md">
+              <img class="size-[18px]" src="./images/icons/phone.svg" alt="" />
+            </div>
+            <span>Telephone Number: <span class="italic font-bold ml-2">8123-4567</span> </span>
+          </div>
+          <div class="flex gap-4 items-center max-sm:flex-col max-sm:items-start max-sm:mb-2">
+            <div class="bg-[#59280a] size-[40px] flex items-center justify-center rounded-full shadow-md">
+              <img class="size-[18px]" src="./images/icons/envelope.svg" alt="" />
+            </div>
+            <span class="">Email: <span class="italic font-bold ml-2">cafedelight@gmail.com</span> </span>
+          </div>
+        </div>
+      </div>
+
+      <form action="" class="bg-[#ffffff] p-4 shadow-md w-1/3 flex flex-col gap-4 rounded-md max-[855px]:w-full">
+        <h1 class="text-2xl text-center font-bold">Send us a Message</h1>
+
+        <div class="border-b"></div>
+
+        <div class="flex flex-col">
+          <label for="name" class="capitalize">name</label>
+          <input required type="text" name="name" id="name" class="outline-none border p-2 rounded-md text-sm" />
+        </div>
+        <div class="flex flex-col">
+          <label for="password" class="capitalize">email</label>
+          <input required type="email" name="email" id="email" class="outline-none border p-2 rounded-md text-sm" />
+        </div>
+
+        <div class="flex flex-col">
+          <label for="message" class="capitalize">message</label>
+          <textarea rows="6" required class="outline-none border p-2 rounded-md text-sm resize-none" name=""
+            id=""></textarea>
+        </div>
+
+        <button type="submit" class="bg-[#59280a] h-[39px] text-[#ffffff] rounded-md">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="bg-[#262626] flex items-center justify-center py-5 text-[#ffffff] text-sm" id="footer"></div>
+</body>
+
 </html>
